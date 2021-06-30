@@ -26,3 +26,4 @@
 /Users/tumtummai/Desktop/Dtest/Dtest/obj/Debug/net5.0/ref/Dtest.dll
 /Users/tumtummai/Desktop/Dtest/Dtest/obj/Debug/net5.0/Dtest.pdb
 /Users/tumtummai/Desktop/Dtest/Dtest/obj/Debug/net5.0/Dtest.genruntimeconfig.cache
+/Users/tumtummai/Desktop/Dtest/Dtest/obj/Debug/net5.0/Dtest.csproj.AssemblyReference.cache
