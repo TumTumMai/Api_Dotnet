@@ -1,8 +1,10 @@
 ﻿using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Dtest.Controllers
 {
+
     [Route("api/[controller]")]
     public class DController : ControllerBase
     {
@@ -12,6 +14,7 @@ namespace Dtest.Controllers
         }
 
         // GET api/D
+        [DisableCors]
         [HttpGet]
         public async Task<IActionResult> GetLatest()
         {
@@ -22,6 +25,7 @@ namespace Dtest.Controllers
         }
 
         // GET api/D/ID
+        [DisableCors]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetOne(int id)
         {
@@ -34,6 +38,7 @@ namespace Dtest.Controllers
         }
 
         // POST api/D
+        [DisableCors]
         [HttpPost]
         public async Task<IActionResult> Post([FromBody]DPost body)
         {
@@ -44,6 +49,7 @@ namespace Dtest.Controllers
         }
 
         // PUT api/D/ID
+        [DisableCors]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutOne(int id, [FromBody] DPost body)
         {
@@ -61,6 +67,7 @@ namespace Dtest.Controllers
         }
 
         // DELETE api/D/ID
+        [DisableCors]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteOne(int id)
         {

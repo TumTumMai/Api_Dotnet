@@ -29,6 +29,16 @@ namespace Dtest
         {
 
             services.AddTransient<AppDb>(_ => new AppDb(Configuration["ConnectionStrings:DefaultConnection"]));
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: "MyPolicy",
+                    builder =>
+                    {
+                        builder.WithOrigins("http://example.com",
+                                            "http://www.contoso.com")
+                                .WithMethods("PUT", "DELETE", "GET","POST");
+                    });
+            });
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -46,9 +56,11 @@ namespace Dtest
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Dtest v1"));
             }
 
-            //app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 
