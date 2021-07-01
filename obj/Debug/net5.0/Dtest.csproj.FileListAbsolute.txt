@@ -6,8 +6,12 @@
 /Users/tumtummai/Desktop/Dtest/Dtest/bin/Debug/net5.0/Dtest.dll
 /Users/tumtummai/Desktop/Dtest/Dtest/bin/Debug/net5.0/ref/Dtest.dll
 /Users/tumtummai/Desktop/Dtest/Dtest/bin/Debug/net5.0/Dtest.pdb
+/Users/tumtummai/Desktop/Dtest/Dtest/bin/Debug/net5.0/System.Web.Cors.dll
+/Users/tumtummai/Desktop/Dtest/Dtest/bin/Debug/net5.0/Microsoft.DotNet.PlatformAbstractions.dll
+/Users/tumtummai/Desktop/Dtest/Dtest/bin/Debug/net5.0/Microsoft.Extensions.DependencyModel.dll
 /Users/tumtummai/Desktop/Dtest/Dtest/bin/Debug/net5.0/Microsoft.OpenApi.dll
 /Users/tumtummai/Desktop/Dtest/Dtest/bin/Debug/net5.0/MySqlConnector.dll
+/Users/tumtummai/Desktop/Dtest/Dtest/bin/Debug/net5.0/Newtonsoft.Json.dll
 /Users/tumtummai/Desktop/Dtest/Dtest/bin/Debug/net5.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/tumtummai/Desktop/Dtest/Dtest/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/tumtummai/Desktop/Dtest/Dtest/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll

@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using System.Threading.Tasks;
 using Dtest;
 using MySqlConnector;
@@ -8,10 +9,10 @@ namespace Dtest
     public class DPost
     {
         public int Id { get; set; }
-        public string Date { get; set; }
+        public DateTime Date { get; set; }
         public string Discipline { get; set; }
         public string Project { get; set; }
-        public string Status { get; set; }
+        public Boolean Status { get; set; }
 
 
         internal AppDb Db { get; set; }
@@ -66,7 +67,7 @@ namespace Dtest
             cmd.Parameters.Add(new MySqlParameter
             {
                 ParameterName = "@date",
-                DbType = DbType.String,
+                DbType = DbType.DateTime,
                 Value = Date,
             });
             cmd.Parameters.Add(new MySqlParameter
@@ -84,7 +85,7 @@ namespace Dtest
             cmd.Parameters.Add(new MySqlParameter
             {
                 ParameterName = "@status",
-                DbType = DbType.String,
+                DbType = DbType.Boolean,
                 Value = Status,
             });
         }

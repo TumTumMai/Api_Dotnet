@@ -56,10 +56,10 @@ namespace Dtest
                     var post = new DPost(Db)
                     {
                         Id = reader.GetInt32(0),
-                        Date = reader.GetString(1),
+                        Date = reader.GetDateTime(1),
                         Discipline = reader.GetString(2),
                         Project = reader.GetString(3),
-                        Status = reader.GetString(4),
+                        Status = reader.GetBoolean(4),
                     };
                     posts.Add(post);
                 }
